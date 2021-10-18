@@ -7,6 +7,8 @@ let statistics = {
     rareCars: 2
 };
 
-for (const prop in statistics){
-    console.log(statistics.${prop} = ${statistics[prop]});
+for (prop in statistics){
+    if((statistics[prop] % 2 != 0) || prop.charAt(0) == 'r'){
+        console.log(statistics[prop]);
+    }
 }
